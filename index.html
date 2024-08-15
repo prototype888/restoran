@@ -28,7 +28,7 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
+    <!-- Css -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -77,9 +77,9 @@
                 <div class="container my-5 py-5">
                     <div class="row align-items-center g-5">
                         <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
+                            <h1 class="display-3 text-white animated slideInLeft">Kelas Memasak<br>ala Chef Willy</h1>
                             <p class="text-white animated slideInLeft mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
+                            <a href="#bookingnow" id="scrollToSlow" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Booking Class</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-end overflow-hidden">
                             <img class="img-fluid" src="img/hero.png" alt="">
@@ -128,6 +128,28 @@
                                 <i class="fa fa-3x fa-headset text-primary mb-4"></i>
                                 <h5>24/7 Service</h5>
                                 <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 mt-1" id="bookingnow">
+                    <div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-gem text-primary mb-4"></i>
+                                <h5>Paket Silver</h5>
+                                <p>Detail paket silver</p>
+                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-class-1">Detail Class</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-crown text-primary mb-4"></i>
+                                <h5>Paket Gold</h5>
+                                <p>Detail paket Gold</p>
+                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-class-2">Detail Class</a>
                             </div>
                         </div>
                     </div>
@@ -540,7 +562,7 @@
             <div class="row g-0">
                 <div class="col-md-6">
                     <div class="video">
-                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/QS0As2cgZ4Q" data-bs-target="#videoModal">
                             <span></span>
                         </button>
                     </div>
@@ -549,7 +571,7 @@
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
                         <h1 class="text-white mb-4">Book A Table Online</h1>
-                        <form>
+                        <form method="POST">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -620,20 +642,21 @@
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h5 class="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
-                    <h1 class="mb-5">Our Master Chefs</h1>
+                    <h1 class="mb-5">Ambil Class dengan Pilihan Chef</h1>
                 </div>
                 <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item text-center rounded overflow-hidden">
                             <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/team-1.jpg" alt="">
+                                <img class="img-fluid" src="img/team-2.jpg" alt="Team Member">
                             </div>
                             <h5 class="mb-0">Full Name</h5>
                             <small>Designation</small>
+                            <a href="#" class="btn btn-dark mt-2">Ambil Class</a>
                             <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-primary d-flex mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary d-flex mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary d-flex mx-1" href="#"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -644,10 +667,11 @@
                             </div>
                             <h5 class="mb-0">Full Name</h5>
                             <small>Designation</small>
+                            <a href="#" class="btn btn-dark mt-2">Ambil Class</a>
                             <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-primary d-flex mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary d-flex mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary d-flex mx-1" href=""><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -658,10 +682,11 @@
                             </div>
                             <h5 class="mb-0">Full Name</h5>
                             <small>Designation</small>
+                            <a href="#" class="btn btn-dark mt-2">Ambil Class</a>
                             <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-primary d-flex mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary d-flex mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary d-flex mx-1" href=""><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -672,10 +697,11 @@
                             </div>
                             <h5 class="mb-0">Full Name</h5>
                             <small>Designation</small>
+                            <a href="#" class="btn btn-dark mt-2">Ambil Class</a>
                             <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-primary d-flex mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary d-flex mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary d-flex mx-1" href=""><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -804,9 +830,46 @@
         </div>
         <!-- Footer End -->
 
+        <!-- Modal 1 -->
+        <div class="modal fade modal-class-1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="modal1Label">Detail Class 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <p>Ini adalah detail dari Class 1.</p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="#" class="btn btn-primary">Beli Class</a>
+                </div>
+            </div>
+            </div>
+        </div>
+  
+        <!-- Modal 2 -->
+        <div class="modal fade modal-class-2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="modal2Label">Detail Class 2</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <p>Ini adalah detail dari Class 2.</p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="" class="btn btn-primary">Beli Class</a>
+                </div>
+            </div>
+            </div>
+        </div>
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -821,7 +884,7 @@
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- Template Javascript -->
+    <!-- Js -->
     <script src="js/main.js"></script>
 </body>
 
