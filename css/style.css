@@ -353,7 +353,7 @@
 /*** Team ***/
 .team-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
-    height: calc(100% - 70px);
+    height: calc(100% - 60px);
     transition: .5s;
     padding: 20px; /* Tambahkan padding untuk ruang di dalam */
     text-align: center; /* Pastikan teks di tengah */
