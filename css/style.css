@@ -350,12 +350,13 @@
     opacity: 1;
 }
 
-
 /*** Team ***/
 .team-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
-    height: calc(100% - 38px);
+    height: calc(100% - 70px);
     transition: .5s;
+    padding: 20px; /* Tambahkan padding untuk ruang di dalam */
+    text-align: center; /* Pastikan teks di tengah */
 }
 
 .team-item img {
@@ -372,8 +373,14 @@
 
 .team-item .btn {
     border-radius: 38px 38px 0 0;
+    margin: 0 auto; 
 }
 
+.team-item a.btn-dark {
+    display: block; 
+    margin-top: 10px; 
+    max-width: 300px;
+}
 
 /*** Testimonial ***/
 .testimonial-carousel .owl-item .testimonial-item,
