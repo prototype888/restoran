@@ -23,6 +23,7 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -58,7 +59,7 @@
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <a href="menu.html" class="nav-item nav-link">Place</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
@@ -73,20 +74,49 @@
                 </div>
             </nav>
 
-            <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container my-5 py-5">
-                    <div class="row align-items-center g-5">
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="display-3 text-white animated slideInLeft">Kelas Memasak<br>ala Chef Willy</h1>
-                            <p class="text-white animated slideInLeft mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                            <a href="#bookingnow" id="scrollToSlow" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Booking Class</a>
+            <!-- Carousel Start -->
+            <div class="header-carousel owl-carousel owl-theme">
+                <div class="header-carousel-item">
+                    <img src="img/heroo.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="carousel-caption-content p-3">
+                            <h5 class="text-white text-uppercase fw-bold mb-4 animated slideInLeft" style="letter-spacing: 3px;">Consultan Class</h5>
+                            <h1 class="display-1 text-capitalize text-white mb-4 animated slideInLeft">DTS Chef F&B Konsultan</h1>
+                            <p class="mb-5 fs-5 animated slideInLeft">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            </p>
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5 animated slideInLeft" href="#bookingnow" id="scrollToSlow">Booking Konsultan</a>
                         </div>
-                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
-                            <img class="img-fluid" src="img/hero.png" alt="">
+                    </div>
+                </div>
+                <div class="header-carousel-item">
+                    <img src="img/herooo.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="carousel-caption-content p-3">
+                            <h5 class="text-white text-uppercase fw-bold mb-4 animated slideInLeft" style="letter-spacing: 3px;">Consultan Class</h5>
+                            <h1 class="display-1 text-capitalize text-white mb-4 animated slideInLeft">DTS Chef F&B Konsultan</h1>
+                            <p class="mb-5 fs-5 animated slideInLeft">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            </p>
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5 animated slideInLeft" href="#bookingnow" id="scrollToSlow">Booking Konsultan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-carousel-item">
+                    <img src="img/heroo.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="carousel-caption-content p-3">
+                            <h5 class="text-white text-uppercase fw-bold mb-4 animated slideInLeft" style="letter-spacing: 3px;">Consultan Class</h5>
+                            <h1 class="display-1 text-capitalize text-white mb-4 animated slideInLeft">DTS Chef F&B Konsultan</h1>
+                            <p class="mb-5 fs-5 animated slideInLeft">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            </p>
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5 animated slideInLeft" href="#bookingnow" id="scrollToSlow">Booking Konsultan</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Carousel End -->            
+            <!-- Custom Dots for dynamicBullets -->
+            <div id="carousel-indicators" class="owl-dots position-relative text-center mt-3"></div>
+
         </div>
         <!-- Navbar & Hero End -->
 
@@ -137,8 +167,8 @@
                         <div class="service-item rounded pt-3">
                             <div class="p-4">
                                 <i class="fa fa-3x fa-gem text-primary mb-4"></i>
-                                <h5>Paket Silver</h5>
-                                <p>Detail paket silver</p>
+                                <h5>Paket Konsultan</h5>
+                                <p>Kami menawarkan jasa konsultasi konsep resto, setting layout kitchen, pembuatan recipe menu (20 menu: appetizer, main course, dessert), serta SOP untuk kitchen, beverage, dan service</p>
                                 <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-class-1">Detail Class</a>
                             </div>
                         </div>
@@ -147,8 +177,8 @@
                         <div class="service-item rounded pt-3">
                             <div class="p-4">
                                 <i class="fa fa-3x fa-crown text-primary mb-4"></i>
-                                <h5>Paket Gold</h5>
-                                <p>Detail paket Gold</p>
+                                <h5>Jasa Consultan & Maintenance</h5>
+                                <p>Kami menyediakan layanan tim on-site selama 2 minggu, jasa konsultasi, pembuatan recipe menu, test food menu, hiring, training crew, setting layout (kitchen, bar, dinner place), dan lain-lain.</p>
                                 <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-class-2">Detail Class</a>
                             </div>
                         </div>
@@ -181,7 +211,7 @@
                     </div>
                     <div class="col-lg-6">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
-                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Restoran</h1>
+                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Konsultan</h1>
                         <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
                         <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                         <div class="row g-4 mb-4">
@@ -216,35 +246,35 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
-                    <h1 class="mb-5">Most Popular Items</h1>
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Have been Class</h5>
+                    <h1 class="mb-5">Popular Place Class</h1>
                 </div>
                 <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
                     <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
                         <li class="nav-item">
                             <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
-                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <i class="fa fa-landmark fa-2x text-primary"></i>
                                 <div class="ps-3">
-                                    <small class="text-body">Popular</small>
-                                    <h6 class="mt-n1 mb-0">Breakfast</h6>
+                                    <small class="text-body">All place</small>
+                                    <h6 class="mt-n1 mb-0">Popular</h6>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
-                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <i class="fa fa-building fa-2x text-primary"></i>
                                 <div class="ps-3">
-                                    <small class="text-body">Special</small>
-                                    <h6 class="mt-n1 mb-0">Launch</h6>
+                                    <small class="text-body">Place in</small>
+                                    <h6 class="mt-n1 mb-0">Malang</h6>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
-                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <i class="fa fa-city fa-2x text-primary"></i>
                                 <div class="ps-3">
-                                    <small class="text-body">Lovely</small>
-                                    <h6 class="mt-n1 mb-0">Dinner</h6>
+                                    <small class="text-body">Place in </small>
+                                    <h6 class="mt-n1 mb-0">Jakarta</h6>
                                 </div>
                             </a>
                         </li>
@@ -254,11 +284,11 @@
                             <div class="row g-4">
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/starbuck.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -269,8 +299,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -281,8 +311,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -293,8 +323,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -305,8 +335,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -317,8 +347,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -329,8 +359,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -341,8 +371,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -357,8 +387,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -369,8 +399,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -381,8 +411,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -393,8 +423,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -405,8 +435,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -417,8 +447,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -429,8 +459,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -441,8 +471,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -457,8 +487,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -469,8 +499,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -481,8 +511,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -493,8 +523,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -505,8 +535,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -517,8 +547,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -529,8 +559,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -541,8 +571,8 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Starbuck</span>
+                                                <a href="#" class="btn btn-dark animated slideInLeft" data-bs-toggle="modal" data-bs-target=".modal-lihat-class-1">Lihat Class</a>
                                             </h5>
                                             <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
@@ -570,7 +600,7 @@
                 <div class="col-md-6 bg-dark d-flex align-items-center">
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
-                        <h1 class="text-white mb-4">Book A Table Online</h1>
+                        <h1 class="text-white mb-4">Ambil Kelas Konsultan</h1>
                         <form method="POST">
                             <div class="row g-3">
                                 <div class="col-md-6">
@@ -593,13 +623,9 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <select class="form-select" id="select1">
-                                          <option value="1">People 1</option>
-                                          <option value="2">People 2</option>
-                                          <option value="3">People 3</option>
-                                        </select>
-                                        <label for="select1">No Of People</label>
-                                      </div>
+                                        <input type="number" class="form-control" id="number" placeholder="Jumlah Peserta">
+                                        <label for="number">Jumlah Peserta</label>
+                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
@@ -835,12 +861,19 @@
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="modal1Label">Detail Class 1</h5>
+                <h5 class="modal-title" id="modal1Label">Paket Konsultan</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                <p>Ini adalah detail dari Class 1.</p>
-                </div>
+                <h5>Produk yang di dapat</h5>
+                <li class="ms-3">Jasa konsultasi</li>
+                <li class="ms-3">⁠Konsep resto</li>
+                <li class="ms-3">⁠Jasa setting layout kitchen</li>
+                <li class="ms-3">⁠Recipe menu 20 menu appatizer,main course & Dessert</li>
+                <li class="ms-3">⁠SOP (Standart operasional prosedur) kitchen,baverage & service</li>
+                <br>
+                <h6>~ Biaya jasa sebesar Rp.10.000.000</h6>
+            </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <a href="#" class="btn btn-primary">Beli Class</a>
@@ -854,11 +887,75 @@
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="modal2Label">Detail Class 2</h5>
+                <h5 class="modal-title" id="modal2Label">Jasa Consultan & Maintenance</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                <p>Ini adalah detail dari Class 2.</p>
+                <h5>Produk yang di dapat</h5>
+                <li class="ms-3">team go to location selama 2 minggu</li>
+                <li class="ms-3">Jasa konsultasi</li>
+                <li class="ms-3">⁠recipe menu</li>
+                <li class="ms-3">⁠test food menu</li>
+                <li class="ms-3">⁠hiring crew</li>
+                <li class="ms-3">⁠trainer all crew</li>
+                <li class="ms-3">⁠⁠setting kitchen layout</li>
+                <li class="ms-3">⁠setting bar layout</li>        
+                <li class="ms-3">⁠setting dinner place</li>        
+                <li class="ms-3">⁠SOP dan penerapan kepada crew</li>        
+                <li class="ms-3">⁠setting management</li>        
+                <li class="ms-3">mengawal grand opening</li>        
+                <li class="ms-3">DLL</li>        
+                <br>
+                <h6>~ Biaya operasional sebesar Rp 50.000.000</h6>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="" class="btn btn-primary">Beli Class</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal lihat class 1 -->
+        <div class="modal fade modal-lihat-class-1" tabindex="-1" aria-labelledby="modallihat1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="modallihat1Label">Starbuck</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container mb-3">
+                        <div class="row g-3">
+                            <div class="col-6 col-md-6">
+                                <img src="img/heroo.jpg" class="img-fluid rounded" alt="Gambar 1">
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <img src="img/heroo.jpg" class="img-fluid rounded" alt="Gambar 2">
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <img src="img/heroo.jpg" class="img-fluid rounded" alt="Gambar 3">
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <img src="img/heroo.jpg" class="img-fluid rounded" alt="Gambar 4">
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Deskripsi</h5>
+                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                    <li class="ms-3">team go to location selama 2 minggu</li>
+                    <li class="ms-3">Jasa konsultasi</li>
+                    <li class="ms-3">⁠recipe menu</li>
+                    <li class="ms-3">⁠test food menu</li>
+                    <li class="ms-3">⁠hiring crew</li>
+                    <li class="ms-3">⁠trainer all crew</li>
+                    <li class="ms-3">⁠⁠setting kitchen layout</li>
+                    <li class="ms-3">⁠setting bar layout</li>        
+                    <li class="ms-3">⁠setting dinner place</li>        
+                    <li class="ms-3">⁠SOP dan penerapan kepada crew</li>        
+                    <li class="ms-3">⁠setting management</li>        
+                    <li class="ms-3">mengawal grand opening</li>        
+                    <li class="ms-3">DLL</li>        
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
