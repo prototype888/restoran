@@ -24,6 +24,23 @@
             $('.navbar').removeClass('sticky-top shadow-sm');
         }
     });
+
+    $(document).ready(function(){
+        var owl = $(".header-carousel").owlCarousel({
+            animateOut: 'slideOutDown',
+            items: 1,
+            autoplay: true,
+            smartSpeed: 800,
+            dots: true,
+            loop: true,
+            nav: true,
+            navText: [
+                '<i class="bi bi-arrow-left"></i>',
+                '<i class="bi bi-arrow-right"></i>'
+            ],
+        });
+    });
+    
     
     
     // Dropdown on mouse hover
@@ -71,7 +88,7 @@
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
-        time: 2000
+        time: 1000
     });
 
 
@@ -115,14 +132,15 @@
         }
     });
 
-        $(document).ready(function() {
+    $(document).ready(function() {
         $('#scrollToSlow').on('click', function(e) {
             e.preventDefault(); 
             $('html, body').animate({
-                scrollTop: $('#bookingnow').offset().top - 100
+                scrollTop: $('#bookingnow').offset().top + 1500
             }, 1000); 
         });
     });
     
 })(jQuery);
+
 
