@@ -601,7 +601,7 @@
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
                         <h1 class="text-white mb-4">Ambil Kelas Konsultan</h1>
-                        <form method="POST">
+                        <form id="contactForm">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -983,6 +983,25 @@
 
     <!-- Js -->
     <script src="js/main.js"></script>
+
+        <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+    
+            var name = encodeURIComponent(document.getElementById('name').value);
+            var email = encodeURIComponent(document.getElementById('email').value);
+            var datetime = encodeURIComponent(document.getElementById('datetime').value);
+            var number = encodeURIComponent(document.getElementById('number').value);
+            var message = encodeURIComponent(document.getElementById('message').value);
+    
+            var whatsappMessage = `Name: ${name}%0AEmail: ${email}%0ADate & Time: ${datetime}%0ANumber of Participants: ${number}%0ASpecial Request: ${message}`;
+            var whatsappNumber = '6285708646867';
+            var whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+    
+            window.location.href = whatsappURL;
+        });
+    </script>
+    
 </body>
 
 </html>
