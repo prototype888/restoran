@@ -132,15 +132,87 @@
         }
     });
 
+    // Hero Header carousel
+    $(".header-carousel").owlCarousel({
+        animateOut: 'slideOutRight',
+        animateIn: 'slideInRight',
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        smartSpeed: 1000,
+        dots: true,
+        loop: true,
+        nav : true,
+        navText : [
+            '<i class="bi bi-arrow-left"></i>',
+            '<i class="bi bi-arrow-right"></i>'
+        ],
+    });
+
     $(document).ready(function() {
-        $('#scrollToSlow').on('click', function(e) {
+        $('.scrollToSlow').on('click', function(e) {
             e.preventDefault(); 
             $('html, body').animate({
-                scrollTop: $('#bookingnow').offset().top + 1500
+                scrollTop: $('#bookingnow').offset().top - 60
             }, 1000); 
         });
     });
     
 })(jQuery);
 
+$(function () {
+    $('#date3').datetimepicker({
+        format: 'YYYY-MM-DD HH:mm',
+        useCurrent: false
+    });
 
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var datetime = $('#datetime').val();
+        var number = $('#number').val();
+        var message = $('#message').val();
+
+        var fullMessage = `Name: ${name}\nEmail: ${email}\nDate & Time: ${datetime}\nNumber of Participants: ${number}\nSpecial Request: ${message}`;
+
+        var whatsappMessage = encodeURIComponent(fullMessage);
+
+        var whatsappNumber = '6285708646867';
+        var whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+
+        window.location.href = whatsappURL;
+    });
+});
+
+document.getElementById('buyBasicClassBtn').addEventListener('click', function(event) {
+    event.preventDefault(); 
+    var phoneNumber = '6285708646867'; 
+    var className = this.getAttribute('data-classname'); 
+    var buyBasicClassMessage = `Halo, saya tertarik untuk membeli kelas ${className}.`;
+    var buyBasicClassWhatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(buyBasicClassMessage)}`;
+
+    window.location.href = buyBasicClassWhatsappURL;
+});
+
+document.getElementById('buyProClassBtn').addEventListener('click', function(event) {
+    event.preventDefault(); 
+    var phoneNumber = '6285708646867'; 
+    var className = this.getAttribute('data-classname'); 
+    var buyProClassMessage = `Halo, saya tertarik untuk membeli kelas ${className}.`;
+    var buyProClassWhatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(buyProClassMessage)}`;
+
+    window.location.href = buyProClassWhatsappURL;
+});
+
+document.getElementById('buyStandardClassBtn').addEventListener('click', function(event) {
+    event.preventDefault(); 
+    var phoneNumber = '6285708646867'; 
+    var className = this.getAttribute('data-classname'); 
+    var buyStandardClassMessage = `Halo, saya tertarik untuk membeli kelas ${className}.`;
+    var buyStandardClassWhatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(buyStandardClassMessage)}`;
+
+    window.location.href = buyStandardClassWhatsappURL;
+});
