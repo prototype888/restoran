@@ -84,7 +84,7 @@
                             <h1 class="display-1 text-capitalize text-white mb-4 animated slideInLeft">DTS Chef F&B Konsultan</h1>
                             <p class="mb-5 fs-5 animated slideInLeft">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                             </p>
-                            <a class="btn btn-primary rounded-pill text-white py-3 px-5 animated slideInLeft" href="#bookingnow" id="scrollToSlow">Booking Konsultan</a>
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5 animated slideInLeft scrollToSlow" href="#bookingnow">Booking Konsultan</a>
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                             <h1 class="display-1 text-capitalize text-white mb-4 animated slideInLeft">DTS Chef F&B Konsultan</h1>
                             <p class="mb-5 fs-5 animated slideInLeft">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                             </p>
-                            <a class="btn btn-primary rounded-pill text-white py-3 px-5 animated slideInLeft" href="#bookingnow" id="scrollToSlow">Booking Konsultan</a>
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5 animated slideInLeft scrollToSlow" href="#bookingnow">Booking Konsultan</a>
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                             <h1 class="display-1 text-capitalize text-white mb-4 animated slideInLeft">DTS Chef F&B Konsultan</h1>
                             <p class="mb-5 fs-5 animated slideInLeft">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                             </p>
-                            <a class="btn btn-primary rounded-pill text-white py-3 px-5 animated slideInLeft" href="#bookingnow" id="scrollToSlow">Booking Konsultan</a>
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5 animated slideInLeft scrollToSlow" href="#bookingnow">Booking Konsultan</a>
                         </div>
                     </div>
                 </div>
@@ -605,25 +605,25 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating date" id="date3" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                        <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" required />
                                         <label for="datetime">Date & Time</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="number" class="form-control" id="number" placeholder="Jumlah Peserta">
+                                        <input type="number" class="form-control" id="number" placeholder="Jumlah Peserta" required>
                                         <label for="number">Jumlah Peserta</label>
                                     </div>
                                 </div>
@@ -638,6 +638,7 @@
                                 </div>
                             </div>
                         </form>
+                        
                     </div>
                 </div>
             </div>
@@ -827,13 +828,16 @@
                         <p>10AM - 08PM</p>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Partner</h4>
+                        <div class="d-flex flex-wrap gap-2 w-100 col-lg-6 col-md-12">
+                            <img class="img-fluid w-25 h-25 rounded" src="img/patner-1.png" alt="Partner 1">
+                            <img class="img-fluid w-25 h-25 rounded" src="img/patner-2.png" alt="Partner 2">
+                            <img class="img-fluid w-25 h-25 rounded" src="img/patner-3.png" alt="Partner 3">
+                            <img class="img-fluid w-25 h-25 rounded" src="img/patner-1.png" alt="Partner 3">
+                            <img class="img-fluid w-25 h-25 rounded" src="img/patner-2.png" alt="Partner 3">
+                            <img class="img-fluid w-25 h-25 rounded" src="img/patner-3.png" alt="Partner 3">
                         </div>
-                    </div>
+                    </div>                    
                 </div>
             </div>
             <div class="container">
@@ -875,8 +879,8 @@
                 <h6>~ Biaya jasa sebesar Rp.10.000.000</h6>
             </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <a href="#" class="btn btn-primary">Beli Class</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#" class="btn btn-primary" id="buyBasicClassBtn" data-classname="Basic Cooking Class">Beli Basic Class</a>
                 </div>
             </div>
             </div>
@@ -909,8 +913,8 @@
                 <h6>~ Biaya operasional sebesar Rp 50.000.000</h6>
                 </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <a href="" class="btn btn-primary">Beli Class</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#" class="btn btn-primary" id="buyProClassBtn" data-classname="Pro Cooking Class">Beli Pro Class</a>
                 </div>
             </div>
             </div>
@@ -958,8 +962,8 @@
                     <li class="ms-3">DLL</li>        
                 </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <a href="" class="btn btn-primary">Beli Class</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#" class="btn btn-primary" id="buyStandardClassBtn" data-classname="Cooking Class">Beli Class</a>
                 </div>
             </div>
             </div>
@@ -970,7 +974,9 @@
     </div>
 
     <!-- JavaScript Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempus-dominus/6.0.0/css/tempus-dominus.min.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempus-dominus/6.0.0/js/tempus-dominus.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -983,25 +989,6 @@
 
     <!-- Js -->
     <script src="js/main.js"></script>
-
-        <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-    
-            var name = encodeURIComponent(document.getElementById('name').value);
-            var email = encodeURIComponent(document.getElementById('email').value);
-            var datetime = encodeURIComponent(document.getElementById('datetime').value);
-            var number = encodeURIComponent(document.getElementById('number').value);
-            var message = encodeURIComponent(document.getElementById('message').value);
-    
-            var whatsappMessage = `Name: ${name}%0AEmail: ${email}%0ADate & Time: ${datetime}%0ANumber of Participants: ${number}%0ASpecial Request: ${message}`;
-            var whatsappNumber = '6285708646867';
-            var whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
-    
-            window.location.href = whatsappURL;
-        });
-    </script>
-    
 </body>
 
 </html>
