@@ -153,7 +153,7 @@
         $('.scrollToSlow').on('click', function(e) {
             e.preventDefault(); 
             $('html, body').animate({
-                scrollTop: $('#bookingnow').offset().top - 90
+                scrollTop: $('#bookingnow').offset().top - 100
             }, 1000); 
         });
     });
