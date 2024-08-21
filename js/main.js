@@ -110,27 +110,62 @@
     });
 
 
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        center: true,
-        margin: 24,
-        dots: true,
-        loop: true,
-        nav : false,
-        responsive: {
-            0:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            992:{
-                items:3
+    // Testimonial Owl Carousel
+    $(document).ready(function(){
+        var $carousel = $(".testimonial-carousel");
+    
+        $carousel.owlCarousel({
+            autoplay: true,
+            smartSpeed: 1000,
+            center: true,
+            margin: 24,
+            dots: true,
+            loop: true,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                }
+            }
+        });
+    
+        function limitDots() {
+            var dots = $carousel.find('.owl-dot');
+            var maxDots = 4; 
+    
+            if (dots.length > maxDots) {
+                dots.each(function(index) {
+                    $(this).toggle(index < maxDots);
+                });
             }
         }
+    
+        function updateActiveDot() {
+            var dots = $carousel.find('.owl-dot:visible');
+            var activeIndex = $carousel.find('.owl-item.active').index();
+            
+            dots.removeClass('active');
+            
+            var dotIndex = activeIndex % dots.length;
+            dots.eq(dotIndex).addClass('active');
+        }
+    
+        limitDots();
+        updateActiveDot();
+    
+        $carousel.on('changed.owl.carousel', function() {
+            limitDots();
+            updateActiveDot();
+        });
     });
+    
+    
 
     // Hero Header carousel
     $(".header-carousel").owlCarousel({
@@ -153,7 +188,7 @@
         $('.scrollToSlow').on('click', function(e) {
             e.preventDefault(); 
             $('html, body').animate({
-                scrollTop: $('#bookingnow').offset().top - 100
+                scrollTop: $('#bookingnow').offset().top - 90
             }, 1000); 
         });
     });
